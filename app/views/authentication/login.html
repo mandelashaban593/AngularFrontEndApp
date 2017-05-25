@@ -1,0 +1,43 @@
+<div ng-controller="LoginCtrl">
+<div class="signup_banner">
+                  <div id="signup_container">
+
+<div id="banner_text" class="signup_banner_box">
+                        <h1>Send Money to <strong>Uganda</strong>, <strong>Kenya</strong> or <strong>Rwanda</strong> Straight to <strong>Mobile</strong> Phone</h1>
+                        <h2>fast, convenient, secure, affordable</h2>
+                    </div>
+
+                        <div id="signup_box">
+                            <h2>Login</h2>
+
+                              <form name="form" ng-submit="postForm()" role="form" id="signup_form">
+        <div class="alert alert-danger" role="alert" ng-show="errorMsg">{{errorMsg}}</div>
+                <div class="input_row input_row3" >
+                                    <label>Email</label>
+                                    <div class="input_box2" ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
+
+                                    <input placeholder="your email" type="email" name="email" id="email" ng-model="loginInputData.email" required/>
+                                    </div>
+                              </div>
+              
+                                <div class="input_row input_row3">
+                                    <label>Password</label>
+                                    <div class="input_box2" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                                     <input placeholder="your password" type="password" name="password" id="password" required ng-model="loginInputData.password"/>
+                                    </div>
+                              </div>
+                             
+                                <div class="clearfix"></div>
+                                <div class="submit">
+                                <input type="submit" value="login" class="col-md-12"></div>
+                            </form>
+
+                             <div class="clearfix"></div>
+                              <div class="extra_links">
+                              <a>Forgot your password ?</a>
+                             </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+              </div>

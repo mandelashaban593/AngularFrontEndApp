@@ -1,0 +1,24 @@
+<div class="index-page">
+  <form >
+    <div>
+      <h2>{{"views.change.Change Password" | translate }}</h2>
+    </div>
+    <div class="col-lg-4 col-lg-offset-4 container">
+      <label><b>{{"views.change.Current Password" | translate }}</b></label>
+      <h5 ng-show="vm.validation" class="validator"> {{vm.validation}} </h5>
+      <input type="password" placeholder='{{"views.login.Enter Password" | translate }}' ng-model="vm.currentPass" class="form-control" required>
+
+      <label><b>{{"views.reset.New Password" | translate }}</b></label>
+      <input type="password" placeholder='{{"views.login.Enter Password" | translate }}' ng-model="vm.newPass" class="form-control" required>
+
+
+      <label><b>{{"views.reset.Confirm Password" | translate }}</b></label>
+      <input type="password" placeholder='{{"views.login.Enter Password" | translate }}' ng-model="vm.newPassConfirm" class="form-control" required>
+      <div class="buttons-line ">
+        <div class="col-lg-3 col-lg-offset-9 login-button">
+          <button class="btn-sm btn-success" ng-click="vm.changePassword(vm.currentPass,vm.newPass,vm.newPassConfirm)">{{"views.change.Change Password" | translate }}</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

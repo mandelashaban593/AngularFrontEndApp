@@ -1,0 +1,265 @@
+  <div class="header_container"><!--start header_container-->
+          <div class="center_content ">
+                <header id="header"><!--start header-->
+                    <div class="lft_header">
+                        <div class="logo"><a ui-sref="main"><img src="images/logo.png" alt="" /></a></div>
+                        <nav class="lftnav">
+                            <ul>
+                                <li><a href="#">How it works</a></li>
+                                <li><a ui-sref="about">About remit</a></li>
+                                <li><a href="#">Help & Support</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="fat-nav">
+                            <div class="fat-nav__wrapper">
+                                <div class="nav_box">
+                                    <ul>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">How it works</a></li>
+                                        <li><a href="#">About remit</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#">Help &amp; Support</a></li>
+                                        <li><a ui-sref="login">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </nav>
+                    </div>
+                    <div class="rgt_header">
+                        <a class="btn_signup" ui-sref="register">Sign Up</a>
+                        <nav class="rgtnav">
+                            <ul>
+                                <li><a ui-sref="login">Login</a></li>
+                            </ul>
+                        </nav>
+                        <span>+256 783 877 133</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </header><!--//end header-->
+            </div>
+        </div><!--//end .header_container-->
+
+
+
+        <div ng-controller="MainCtrl">
+
+        <div class="container banner_container"><!--start container-->
+            <div class="banner">
+                <div class="center_content">
+                    <div id="banner_text">
+                        <h1>Send Money to <strong>Uganda</strong>, <strong>Kenya</strong> or <strong>Rwanda</strong> Straight to <strong>Mobile</strong> Phone</h1>
+                        <h2>fast, convenient, secure, affordable</h2>
+                    </div>
+
+ <div id="send_money">
+                    <!--
+                        <h2>Send money to mobile in minutes</h2>
+                        -->
+                        <form ng-submit="sendMoneyForm()" id="send_money_form">
+
+
+                         <div class="input_row input_row3">
+                                <label><h2>Where do you want to send money?</h2></label>
+                               
+                                <div class="input_box">
+                                    <span class="dk_wrap">
+                                        <select id="countrycode" name="countrycode" class="default" ng-model="sendMoneyModel.recievecountry">
+                                        <option value="UGX" selected>Uganda</option>
+                                        <option value="KES">Kenya</option>
+                                        <option value="RWF">Rwanda</option>
+                                        </select>            
+                                    </span>
+                                    <input ng-model="sendMoneyModel.sendnumber" type="number" ng-maxlength="5" id="mobile_number" name="mobile_number" value="" placeholder="Mobile Number">
+                                    
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="input_row input_row2">
+                                <label><b>You are sending exactly</b></label>
+                                <div class="input_box">
+                                    <input ng-max="{{sendMoneyModel.sendamount_max}}" ng-min="{{sendMoneyModel.sendamount_min}}" type="number" ng-model="sendMoneyModel.sendamount" name="sendamount" id="sendamount"  value="100" placeholder="100">
+                                    <span class="dk_wrap">
+                                        <select name="currency" class="default" ng-model="sendMoneyModel.sendcurrency">
+                                            <option>USD</option>
+                                            <option>EUR</option>
+                                        </select>            
+                                    </span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                            <div class="input_row input_row3">
+                                <label><b>Recipient gets</b></label>
+                                <div class="input_box2">
+                                <input type="text"  ng-model="sendMoneyModel.recieveamount" id="receiveamount" name="receiveamount" readonly></div>
+                            </div>
+                            
+                            <div class="input_row">
+                                <input type="submit" name="submit" value="Send Now" >
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div><!--//end .container-->
+       
+       <div class="container gray_bg"><!--start container-->
+            <div class="center_content">
+                <div class="content">
+                    <h2>Why <strong>Use</strong> Remit?</h2>
+                    <div class="top_text">
+                        <p style="font-size:19px;">Not only because we are super convenient and more affordable. Now sending money to Uganda, Kenya and Rwanda. More countries coming soon. </p>
+                    </div>
+                    <div id="feature">
+
+                        <div class="feature_item">
+                            <div class="feature_icon"><img src="images/feature_icon1.png" alt="fast"></div>
+                            <div class="feature_info">
+                                <h3>Fast</h3>
+                                <p>Instant delivery of the money transfers straight to mobile phones in Africa with instant notifications to both senders and recipients.</p>
+                            </div>
+                        </div>
+                        <div class="feature_item">
+                            <div class="feature_icon"><img src="images/feature_icon2.png" alt="convinient"></div>
+                            <div class="feature_info">
+                                <h3>Convenient</h3>
+                                <p>Send money anytime, anywhere. All you need is an internet connection. No trips, no agents. Available on computer, smart-phone or tablet.</p>
+                            </div>
+                        </div>
+                        <div class="feature_item">
+                            <div class="feature_icon"><img src="images/feature_icon3.png" alt="secure"></div>
+                            <div class="feature_info">
+                                <h3>Secure</h3>
+                                <p>Trusted by thousands. Putting the security of your money and data first. We encrypt your personal data and use the highest security standards available.</p>
+                            </div>
+                        </div>
+                        <div class="feature_item">
+                            <div class="feature_icon"><img src="images/feature_icon4.png" alt="affordable"></div>
+                            <div class="feature_info">
+                                <h3>Affordable</h3>
+                                <p>Affordable fees displayed upfront. We leverage mobile money to offer better rates than other money transfer companies. The affordable choice. </p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div><!--//end .container-->
+
+         <div class="container slider_container"><!--start container-->
+            <div class="center_content">
+
+            <div class="content">
+                 <h2>Our <strong>Users</strong> love us</h2>
+                    <div class="top_text">
+                        <p style="font-size:19px;">Trusted all over the world. Eversend has been used by senders from over 100 countries. </p>
+                    </div>
+
+                <div id="slider_content">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="slide_items">
+                                    <p>I would like to endorse eversend. Very agile terrific customer care and reliable. I am looking forward to the IPO.</p>
+                                    <div class="slider_box">
+                                        <div class="slider_pic"><img src="images/joseph.png" alt="Joseph"/></div>
+                                        <h3>Joseph Owino</h3>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide_items">
+                                    <p>An excellent and efficient way to send money. Real-time and way cheaper than other money transfer options. Totally using this again.</p>
+                                    <div class="slider_box">
+                                        <div class="slider_pic"><img src="images/lynn.png" alt="lynn"/></div>
+                                        <h3>Lynn Kirabo</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide_items">
+                                    <p>Just used useremit.com. Awesome and cheaper alternative to all these money transfer services #HappyCustomer.</p>
+                                    <div class="slider_box">
+                                        <div class="slider_pic"><img src="images/brenda.png" alt="brenda"/></div>
+                                        <h3>Brenda Kasabiiti</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div><!--//end .container-->
+
+
+<div class="container line_bg"><!--start container-->
+            <div class="center_content">
+                <div class="content">
+                    <h2>How Remit <strong>Works</strong></h2>
+                    <p style="font-size:19px;">Send money to <strong>Uganda,</strong> <strong>Kenya</strong> or <strong>Rwanda</strong>. As easy as 1-2-3...  </p>
+                    <div id="horizontalTab">
+                        <ul>
+                            <li><a href="#tab-1">Select country <small>01</small></a></li>
+                            <li><a href="#tab-2">Add recipient details <small>02</small></a></li>
+                            <li><a href="#tab-3">Money is delivered <small>03</small></a></li>
+                        </ul>
+                        <div id="tab-1">
+                            <div class="tabcontent">
+                                <div class="lft_tab">
+                                    <strong>01</strong>
+                                    <h3>Select country</h3>
+                                    <p>Start by telling us the country you would like to send money to, we will show you our fees and guaranteed exchange rates so that you know exactly how much the recipient will get.</p>
+                                    <div class="btnarea">
+                                        <a ui-sref="faq" class="btn btn_readmore">Read More</a>
+                                        <a ui-sref="signup" class="btn btn_readmore">START SENDING NOW</a>
+                                    </div>
+                                </div>
+                                <div class="rgt_tab">
+                                   <div class="rgt_tab_pic"><img src="images/tab_pic.png" alt="tab"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2">
+                            <div class="tabcontent">
+                                <div class="lft_tab">
+                                    <strong>02</strong>
+                                    <h3>Add recipient information</h3>
+                                    <p>Enter the recipient's registered mobile money phone number or choose from a list of people you've sent money to in the past. Then, enter the amount you want to send and provide your payment information. Remit accepts major cards including MasterCard and Visa</p>
+                                    <div class="btnarea">
+                                        <a ui-sref="faq" class="btn btn_readmore">Read More</a>
+                                        <a ui-sref="signup" class="btn btn_readmore">START SENDING NOW</a>
+                                    </div>
+                                </div>
+                                <div class="rgt_tab">
+                                   <div class="rgt_tab_pic"><img src="images/tab_pic.png" alt="tab"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3">
+                            <div class="tabcontent">
+                                <div class="lft_tab">
+                                    <strong>03</strong>
+                                    <h3>Money is delievered</h3>
+                                    <p>Money will be instatntly delievered to mobile money. Both the sender and the recipient will get notifications by SMS or email when the money has been received. </p>
+                                    <div class="btnarea">
+                                        <a ui-sref="faq" class="btn btn_readmore">Read More</a>
+                                        <a ui-sref="signup" class="btn btn_readmore">START SENDING NOW</a>
+                                    </div>
+                                </div>
+                                <div class="rgt_tab">
+                                   <div class="rgt_tab_pic"><img src="images/tab_pic.png" alt="tab"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div><!--//end .container-->
+
+</div>

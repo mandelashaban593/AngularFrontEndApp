@@ -1,0 +1,59 @@
+<div ng-controller="MomoCtrl">
+
+
+                            <div class="input_row input_row3">
+                                <label>To which country ?</label>
+                                        <span class="dk_wrap">
+                                        <select class="default" ng-model="sendMoneyModel.countries">
+                                        <option ng-repeat='i in countries'>{{i.name}}</option>
+                                        </select>    
+                                    </span>        
+                                    <div class="clearfix"></div>
+                            </div>
+
+
+                            <div class="input_row input_row2">
+                                <label>How much do you want to send ?</label>
+                                <div class="input_box">
+                                    <input ng-max="{{sendMoneyModel.sendamount_max}}" ng-min="{{sendMoneyModel.sendamount_min}}" type="number" ng-model="sendMoneyModel.sendamount" name="sendamount" id="sendamount"  value="100" placeholder="100">
+                                    <span class="dk_wrap">
+                                        <select class="default" ng-model="sendMoneyModel.currencies">
+                                        <option ng-repeat='i in currencies'>{{i.code}}</option>
+                                        </select>            
+                                    </span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                            <div class="input_row input_row2">
+                                <label>Recipient Gets</label>
+                                <div class="input_box">
+                                    <input type="number" ng-model="sendMoneyModel.recipientamount">
+                                    <span class="dk_wrap">
+                                        <select class="default" ng-model="sendMoneyModel.recipientcurrency">
+                                        </select>            
+                                    </span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                             <div class="input_row input_row2">
+                                <label>Recipient Number</label>
+                                <div class="input_box">
+                                    <input type="number" ng-model="sendMoneyModel.recipientnumber"  placeholder="recipient phonenumber">
+                                    <span class="dk_wrap">
+                                        <select name="currency" class="default" ng-model="sendMoneyModel.recipientnumbercode">
+                                            <option>O77</option>
+                                            <option>075</option>
+                                            <option>078</option>
+                                            <option>070</option>
+                                        </select>            
+                                    </span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="input_row">
+                                <input type="submit" name="submit" value="Send Now" >
+                            </div>
+</div>

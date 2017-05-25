@@ -1,0 +1,11 @@
+<div class="index-page">
+    <div>
+      <h2>{{"views.login.Welcome to Dealflow" | translate }} &copy;</h2>
+    </div>
+    <div ng-show="vm.tokenValid">
+      <h3>{{"views.register.notification" | translate }}</h3>
+    </div>
+    <div ng-hide="vm.tokenValid">
+      <h3>{{"views.register.badnotification" | translate }}</h3>
+    </div>
+</div>

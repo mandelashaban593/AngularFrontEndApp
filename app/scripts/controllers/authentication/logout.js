@@ -1,0 +1,21 @@
+/**
+ * Created by robert on 05.01.17.
+ */
+angular.module('yeoAngApp')
+  .controller('LogoutCtrl', ['$state', '$stateParams', '$templateCache','$scope','$localStorage' , 'AuthService', 'dataFactory' , function ($state, $stateParams, $templateCache, $scope, $localStorage, AuthService, dataFactory) {
+    var vm = this;
+
+    vm.logout = function(){
+      AuthService.logout().then(function(response){
+
+      })
+    };
+
+
+    vm.logout();
+
+    if ($localStorage.profile){
+
+    }
+
+  }]);

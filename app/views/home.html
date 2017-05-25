@@ -1,0 +1,91 @@
+<div ng-controller="HomeCtrl">
+	
+
+
+        <div class="container"><!--start container-->
+            <div class="center_content">
+   <div class="content home">
+                	<div id="send_money_container">
+                        <div id="send_money_box">
+
+
+
+ <div id="send_money">
+                    <!--
+                        <h2>Send money to mobile in minutes</h2>
+                        -->
+                        <form  id="send_money_form" class="home">
+
+                         <div class="input_row input_row3">
+                                <label>What service do you want ?</label>
+                                
+                                    <span class="dk_wrap">
+                                        <select class="default" ng-model="sendMoneyModel.service">
+                                        <option value="momo" selected>I want to Send Money</option>
+                                        <option value="billpayment">I want to Pay A Bill</option>
+                                        <option value="banktransfer">I want to Make A Bank Transfer</option>
+                                        </select> 
+
+                                    </span>
+
+                                    <div class="clearfix"></div>
+                            </div>
+
+                     
+
+                            <div ng-include="sendMoneyModel.form_partial"></div>
+
+                    
+
+                        </form>
+                    </div>
+                        </div>
+
+
+
+                        <div id="send_money_right">
+                        
+                            <div class="gray_chart_box">
+                            	<h3>Not A receipt</h3>
+                                <div class="chart_row_holder">
+                                    <div class="chart_row">
+                                        <span>Our charge</span>
+                                        <small>35.36 <em>USD</em></small>
+                                    </div>
+                                    <div class="chart_row">
+                                        <span>Exange rate</span>
+                                        <small>1 USD = 99.27 <em>KES</em></small>
+                                    </div>
+                                    <div class="chart_row chart_row_total">
+                                        <span>Total to recipients</span>
+                                        <small>161,696.41 <em>KES</em></small>
+                                    </div>
+                                    <div class="chart_row">
+                                        <span>Our charge</span>
+                                        <small>35.36 <em>USD</em></small>
+                                    </div>
+                                    <div class="chart_row">
+                                        <span>Exange rate</span>
+                                        <small>1 USD = 99.27 <em>KES</em></small>
+                                    </div>
+                                      <div class="chart_row">
+                                        <span>Exange rate</span>
+                                        <small>1 USD = 99.27 <em>KES</em></small>
+                                    </div>
+                                      <div class="chart_row">
+                                        <span>Exange rate</span>
+                                        <small>1 USD = 99.27 <em>KES</em></small>
+                                    </div>
+                                    <div class="chart_row chart_row_total">
+                                        <span>Total to recipients</span>
+                                        <small>161,696.41 <em>KES</em></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!--//end .container-->
+    </div>

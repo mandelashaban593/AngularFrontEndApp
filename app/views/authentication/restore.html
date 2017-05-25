@@ -1,0 +1,21 @@
+<div class="index-page">
+  <form>
+    <div class="col-lg-4 col-lg-offset-4">
+      <h2>{{"views.main.Welcome to Dealflow" | translate }} &copy;</h2>
+      <h4>{{"views.login.Register" | translate }}</h4>
+      <h6>{{"views.restore.descriptionone" | translate}}</h6>
+      <h6>{{"views.restore.descriptiontwo" | translate}}</h6>
+    </div>
+
+    <div class="col-lg-4 col-lg-offset-4 container">
+      <label><b>{{"views.login.Email" | translate }}</b></label>
+      <h5 ng-show="vm.validateEmail" class="validator"> {{vm.validateEmail}} </h5>
+      <input type="text" placeholder='{{"views.login.Enter Email" | translate }}' ng-model="vm.mail" class="form-control" required>
+      <div class="buttons-line">
+        <div class="col-lg-3 col-lg-offset-9 login-button">
+          <button class="btn-sm btn-success" ng-click="vm.sendMail(vm.mail)">{{"views.login.Restore" | translate }}</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

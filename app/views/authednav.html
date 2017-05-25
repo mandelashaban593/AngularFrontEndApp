@@ -1,0 +1,58 @@
+    	<div class="header_container"><!--start header_container-->
+        	<div class="center_content ">
+                <header id="header"><!--start header-->
+                    <div class="lft_header">
+                        <div class="logo"><a ui-sref="main"><img src="images/logo.png" alt="" /></a></div>
+                        <nav class="lftnav">
+                            <ul>
+                                <li><a ui-sref="#">Help & Support</a></li>
+                                 <li><a ui-sref="#">My Transactions</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="fat-nav">
+                            <div class="fat-nav__wrapper">
+                                <div class="nav_box">
+                                    <ul>
+                                        <li><a ui-sref="support">Help & Support</a></li>
+                                        <li><span>+256 783 877 133</span></li>>
+                                        <li><a ui-sref="account">My Account</a></li>
+                                        <li><a ui-sref="logout">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </nav>
+                    </div>
+                    <div class="rgt_header">
+                        <div class="col-md-12">
+                        <div class="col-md-7 pull-left">
+                            
+                                <div class="top_price_box">
+                                <div class="account_info_box">
+                                    <div class="photo_box"><img src="{{$root.profile.avatar}}" alt=""></div>
+                                    <div class="account_info">
+                                        <h4>{{profile.names}}</h4>
+
+                                        <span class="account_info_span">{{profile.is_verified ? 'Your Account is verifed':'Your Account is not verified Yet'}}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5 pull-right">
+                        <!--
+                        <a class="btn_signup" ui-sref="account">My Account</a>
+                        -->
+                        <nav class="rgtnav">
+                            <ul>
+                                <li><a ui-sref="logout">Logout</a></li>
+                            </ul>
+                        </nav>
+                        <span>+256 783 877 133</span>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </header><!--//end header-->
+            </div>
+        </div><!--//end .header_container-->
+        

@@ -1,0 +1,72 @@
+<div ng-controller="RegisterCtrl">
+<div class="signup_banner">
+                  <div id="signup_container">
+
+<div id="banner_text" class="signup_banner_box">
+                        <h1>Send Money to <strong>Uganda</strong>, <strong>Kenya</strong> or <strong>Rwanda</strong> Straight to <strong>Mobile</strong> Phone</h1>
+                        <h2>fast, convenient, secure, affordable</h2>
+                    </div>
+
+                        <div id="signup_box">
+                            <h2>Signup</h2>
+
+                              <form name="form" ng-submit="postForm()" role="form" id="signup_form">
+
+        <div class="alert alert-danger" role="alert" ng-show="errorMsg">{{errorMsg}}</div>
+
+                                    <div class="field_row">
+                                    <div class="text_field"><input ng-model="signupInputData.first_name" required type="text" placeholder="Your First Name"></div>
+                                    <div class="text_field"><input ng-model="signupInputData.last_name" type="text" placeholder="Your Last Name"></div>
+                                </div>
+
+                                    <div class="clearfix"></div>
+
+
+                <div class="input_row input_row3" >
+                                    <label>Email</label>
+                                    <h5 ng-show="RegisterCtrl.validation.email" class="validator"> {{RegisterCtrl.validation.email}} </h5>
+                                    <div class="input_box2">
+
+                                    <input placeholder="your email" type="email" name="email" id="email" ng-model="signupInputData.email" required/>
+                                    </div>
+                              </div>
+
+
+                                  <div class="clearfix"></div>
+                                <div class="input_row input_row3">
+                                    <label>Phonenumber</label>
+                                    <div class="input_box">
+                                        <div class="dk_wrap dk_wrap_code">
+                                            <select class="default" ng-model="signupInputData.countrycode" required>
+                                                <option>256</option>
+                                                <option>255</option>
+                                                <option>254</option>
+                                            </select>            
+                                        </div>
+                                        <input ng-model="signupInputData.phonenumber" required type="number"  placeholder="Mobile Number">
+                                        <div class="clearfix"></div>
+                                    </div>
+                              </div>
+              
+                                <div class="input_row input_row3">
+                                    <label>Password</label>
+                                    <h5 ng-show="RegisterCtrl.validation.pass" class="validator"> {{RegisterCtrl.validation.pass}} </h5>
+                                    <div class="input_box2" >
+                                     <input placeholder="pick a password" type="password" name="password" id="password" required ng-model="signupInputData.password"/>
+                                    </div>
+                              </div>
+                             
+                                <div class="clearfix"></div>
+                                <div class="submit">
+                                <input type="submit" value="Signup" class="col-md-12"></div>
+                            </form>
+
+                             <div class="clearfix"></div>
+                              <div class="extra_links">
+                              <a ui-sref="login">Already have an Account ? login</a>
+                             </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+              </div>

@@ -1,0 +1,54 @@
+{
+  "name": "yeo-ang",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.4.5",
+    "bootstrap": "^3.2.0",
+    "angular-animate": "1.4.5",
+    "angular-cookies": "1.4.5",
+    "angular-resource": "1.4.5",
+    "angular-route": "1.4.5",
+    "angular-sanitize": "1.4.5",
+    "angular-touch": "1.4.5",
+    "angular-oauth2": "^4.0.0",
+    "query-string": "^4.2.3",
+    "angular-ui-router": "^0.3.2",
+    "ngToast": "ngtoast#^2.0.0",
+    "angular-translate": "^2.13.1",
+    "angular-translate-loader-static-files": "^2.13.1",
+    "angular-translate-storage-local": "^2.13.1",
+    "angular-translate-handler-log": "^2.13.1",
+    "angular-dynamic-locale": "^0.1.32",
+    "angular-i18n": "^1.6.1",
+    "ngstorage": "^0.3.11",
+    "bootstrap-social": "^5.1.1",
+    "components-font-awesome": "^4.7.0",
+    "angular-ui-router-styles": "^1.1.0",
+    "angular-mocks": "^1.6.2",
+    "angular-bootstrap": "^2.5.0",
+    "dropkick": "^2.1.9",
+    "angular-cache": "^4.6.0",
+    "angular-raven": "^0.6.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.4.5",
+    "ngstorage": "^0.3.11"
+  },
+  "resolutions": {
+    "angular": "1.4.5",
+    "angular-ui-router": "^0.3.2",
+    "query-string": "^1.0.0",
+    "angular-cookies": "1.4.5"
+  },
+  "appPath": "app",
+  "moduleName": "yeoang",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
